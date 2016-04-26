@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'main.views.show_main'),
+    url(r'^(?P<pk>\d+)/$', 'main.views.post_detail'),
 ]
